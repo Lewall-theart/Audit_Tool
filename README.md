@@ -1,7 +1,3 @@
-# Windows Audit Project
-
-Automated Windows log-based security audit pipeline.
-
 ## Overview
 
 This project reads collected Windows host logs, extracts security attributes, maps them to a baseline, evaluates compliance, and generates reports in JSON, HTML, and CSV.
