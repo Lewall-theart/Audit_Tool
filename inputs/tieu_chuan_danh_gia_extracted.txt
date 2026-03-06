@@ -1,0 +1,76 @@
+Đối với windows
+Hạng mục đánh giá
+Yêu cầu theo TCVN 11930:2017
+Đánh giá chi tiết
+Trạng thái
+Danh sách IP không đáp ứng
+Tham chiếu
+Xác thực
+Thiết lập chính sách xác thực trên máy chủ để xác thực người dùng khi truy cập, quản lý và sử dụng máy chủ
+- Kiểm tra các quyền được cấp cho người dùng (User Rights Assessment)
+- Kiểm tra các tuỳ chỉnh bảo mật (Security Options)
+Đáp ứng / Không đáp ứng
+x.x.x.x
+3.1.1.1
+Thay đổi các tài khoản mặc định trên hệ thống hoặc vô hiệu hóa (nếu không sử dụng)
+- Kiểm tra danh sách tài khoản trên máy trạm
+- Kiểm tra sách các nhóm người dùng trên trên máy trạm
+Thiết lập cấu hình máy chủ
+để đảm bảo an toàn mật
+khẩu người sử dụng
+- Kiểm tra cấu hình tự động khởi chạy (Startup list)
+- Kiểm tra cấu hình Task Schedule
+Hạn chế số lần đăng nhập sai trong khoảng thời gian nhất định với một tài khoản nhất định
+- Kiểm tra chính sách kiểm toán tài khoản, mật khẩu
+Thiết lập cấu hình để vô hiệu hóa tài khoản nếu tài khoản đó đăng nhập sai nhiều lần vượt số lần quy định
+- Kiểm tra chính sách kiểm toán tài khoản, mật khẩu
+Kiểm soát truy cập
+Thiết lập hệ thống chỉ cho phép sử dụng các kết nối mạng an toàn khi truy cập, quản trị máy chủ từ xa
+- Kiểm tra xem có thiết lập yêu cầu xác thực đối với Remote Desktop hay không
+Thiết lập giới hạn thời gian chờ (timeout) để đóng phiên kết nối khi máy chủ không nhận được yêu cầu từ người dùng
+- Kiểm tra thiết lập timeout cho Remote Desktop
+Thay đổi cổng quản trị mặc định của máy chủ
+- Kiểm tra cổng mặc định của Remote Desktop có khác 3389 hay không
+Giới hạn địa chỉ mạng được phép truy cập, quản trị máy chủ từ xa
+- Kiểm tra chính sách và cấu hình firewall xem có giới hạn các địa chỉ mạng được phép truy cập và quản trị máy chủ từ xa hay chưa.
+Nhật ký hệ thống
+Thiết lập chức năng ghi nhật ký hệ thống trên các máy chủ
+- Kiểm tra Audit Policy
+Đồng bộ thời gian giữa máy chủ với máy chủ thời gian
+- Kiểm tra đồng bộ thời gian
+Giới hạn đủ dung lượng lưu trữ nhật ký hệ thống để không mất hoặc tràn nhật ký hệ thống
+- Kiểm tra dung lượng lưu trữ log
+Quản lý và lưu trữ tập trung nhật ký hệ thống thu thập được từ máy chủ
+- Kiểm tra Windows Event Forwarding (hoặc các giải pháp log forwarding)
+Lưu nhật ký hệ thống trong khoảng thời gian tối thiểu là 03 tháng
+- Chính sách: Kiểm tra về thời gian lưu trữ nhật ký tối thiểu 03 tháng
+Phòng chống xâm nhập
+Loại bỏ các tài khoản không sử dụng, các tài khoản không còn hợp lệ trên máy chủ
+- Kiểm tra danh sách tài khoản trên máy trạm 
+- Kiểm tra sách các nhóm người dùng trên máy trạm
+Sử dụng tường lửa của hệ điều hành và hệ thống để cấm các truy cập trái phép tới máy chủ
+-  Kiểm tra trạng thái tường lửa
+Vô hiệu hóa các giao thức mạng không an toàn, các dịch vụ hệ thống không sử dụng
+- Kiểm tra Danh sách dịch vụ (Services list)
+- Kiểm tra Danh sách tiến trình (Task list)
+- Kiểm tra kết nối mạng trên thiết bị
+Có phương án cập nhật bản vá, xử lý điểm yếu an toàn thông tin cho hệ điều hành và các dịch vụ hệ thống trên máy chủ
+- Kiểm tra cài đặt Service Pack 
+- Kiểm tra cài đặt hotfix 
+- Kiểm tra chính sách lập lịch cập nhật, kết nối WSUS
+Thực hiện nâng cấp, xử lý điểm yếu an toàn thông tin trên máy chủ trước khi đưa vào sử dụng
+- Kiểm tra chính sách đơn vị
+Phòng chống phần mềm độc hại
+Cài đặt phần mềm phòng chống mã độc (hoặc có phương án khác tương đương) và thiết lập chế độ tự động cập nhật cơ sở dữ liệu cho phần mềm
+- Kiểm tra cài đặt AV
+Có phương án kiểm tra, dò quét, xử lý phần mềm độc hại cho các phần mềm trước khi cài đặt
+- Kiểm tra cài đặt AV
+Quản lý tập trung (cập nhật, cảnh báo và quản lý) các phần mềm phòng chống mã độc cài đặt trên máy chủ và các máy tính người sử dụng trong hệ thống
+- Kiểm tra xem có hệ thống quản trị AV tập trung không?
+Xử lý máy chủ khi chuyển giao
+Có phương án xóa sạch thông tin, dữ liệu trên máy chủ khi chuyển giao hoặc thay đối mục đích sử dụng
+- Kiểm tra chính sách của đơn vị
+Sao lưu dự phòng thông tin, dữ liệu trên máy chủ, bản dự phòng hệ điều hành máy chủ trước khi thực hiện xóa dữ liệu, hệ điều hành
+- Kiểm tra chính sách của đơn vị
+Có biện pháp kiểm tra, bảo đảm dữ liệu không thể khôi phục sau khi xóa
+- Kiếm tra chính sách của đơn vị

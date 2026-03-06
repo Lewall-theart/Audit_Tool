@@ -1,0 +1,73 @@
+{
+  "firewall_domain_profile_state": "ON",
+  "firewall_private_profile_state": "ON",
+  "firewall_public_profile_state": "ON",
+  "firewall_enabled": true,
+
+  "wsus_configured": true,
+  "automatic_update_policy_configured": true,
+
+  "password_minimum_length": {
+    "operator": "gte",
+    "value": 8
+  },
+  "password_maximum_age_days": {
+    "operator": "lte",
+    "value": 90
+  },
+  "password_history_size": {
+    "operator": "gte",
+    "value": 5
+  },
+  "lockout_threshold": {
+    "operator": "between",
+    "min": 1,
+    "max": 10
+  },
+  "lockout_duration_minutes": {
+    "operator": "gte",
+    "value": 5
+  },
+  "account_lockout_policy_configured": true,
+  "password_complexity_enabled": true,
+  "user_rights_section_present": true,
+  "security_options_section_present": true,
+  "startup_entries_reviewed": true,
+  "scheduled_tasks_reviewed": true,
+  "default_builtin_accounts_renamed_or_disabled": true,
+
+  "rdp_non_default_port": true,
+  "rdp_network_restriction": true,
+  "remote_desktop_nla_required": true,
+  "remote_desktop_timeout_configured": true,
+
+  "audit_policy_has_enabled_entries": true,
+  "eventlog_core_channels_enabled": true,
+  "eventlog_security_max_size_bytes": {
+    "operator": "gte",
+    "value": 104857600
+  },
+  "eventlog_retention_or_backup_enabled": true,
+  "event_forwarding_configured": true,
+  "event_log_readers_group_configured": true,
+
+  "time_sync_healthy": true,
+  "ntp_policy_configured": true,
+  "time_sync_policy_and_status_ok": true,
+
+  "print_spooler_disabled": true,
+  "w32time_service_automatic": true,
+
+  "antivirus_installed": true,
+  "antivirus_central_management": true,
+
+  "hotfix_count": {
+    "operator": "gte",
+    "value": 1
+  },
+
+  "data_sanitization_policy_defined": true,
+  "backup_before_decommission_policy_defined": true,
+  "secure_erase_verification_policy_defined": true,
+  "vulnerability_remediation_policy_defined": true
+}

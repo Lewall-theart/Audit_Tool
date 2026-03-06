@@ -1,0 +1,12 @@
+{
+  "enabled": [
+    "state on",
+    "running",
+    "enabled"
+  ],
+  "disabled": [
+    "state off",
+    "stopped",
+    "disabled"
+  ]
+}
